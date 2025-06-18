@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Dropdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="nav-menu">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu-bar">
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown1">
+                            Browse <i class="bx bx-chevron-down"></i>
+                        </button>
+                        <div id="dropdown1" class="dropdown">
+                            <ul>
+                                <li><a class="dropdown-link" href="#">Best of the day</a></li>
+                                <li><a class="dropdown-link" href="#">Featured Streams</a></li>
+                                <li><a class="dropdown-link" href="#">Subscriptions</a></li>
+                                <li><a class="dropdown-link" href="#">Creative Feed</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="nav-link dropdown-btn" data-dropdown="dropdown2">
+                            Discover <i class="bx bx-chevron-down"></i>
+                        </button>
+                        <div id="dropdown2" class="dropdown">
+                            <ul>
+                                <li><a class="dropdown-link" href="#">Branding</a></li>
+                                <li><a class="dropdown-link" href="#">Illustration</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="#">Jobs</a></li>
+                    <li><a class="nav-link" href="#">FAQs</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="right-container">
+                <button id="hamburger"><i class="bx bx-menu"></i></button>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
